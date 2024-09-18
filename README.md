@@ -69,10 +69,10 @@ We started by analyzing existing mobile robotic systems, focusing on wireless co
 
 
 4. **Movement Control**:
- <p align="center" >
+  <p align="center" >
   <img src="./images/camera.png" alt="camera" height="200"/>
-</p>
-  -The robot successfully responds to four hand gestures:
+  </p>
+  - The robot successfully responds to four hand gestures:
    - **Forward**: The robot moves forward.
    - **Backward**: The robot moves backward.
    - **Left**: The robot turns left.
