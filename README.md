@@ -8,8 +8,8 @@ We successfully implemented the system to perform four basic movements: **forwar
 ## Hardware Used
 <p align="center">
   <img src="./images/battery.png" alt="battery" height="200"/>
-  <img src="./images/L298N.png" alt="L298N" width="200"/>
-   <img src="./images/esp32.png" alt="esp32" width="200"/>
+  <img src="./images/L298N.png" alt="L298N" height="200"/>
+   <img src="./images/esp32.png" alt="esp32" height="200"/>
 </p>
 
 1. **2 DC Motors**: To drive the robot's two wheels.
@@ -23,10 +23,10 @@ We successfully implemented the system to perform four basic movements: **forwar
 ## Software Used
 <p align="center">
   <img src="./images/ros.png" alt="ros" height="200"/>
-  <img src="./images/python.png" alt="python" width="200"/>
-   <img src="./images/arduino.png" alt="arduino" width="200"/>
-   <img src="./images/opencv.png" alt="opencv" width="200"/>
-  <img src="./images/mediapipe.png" alt="mediapipe" width="200"/>
+  <img src="./images/python.png" alt="python" height="200"/>
+   <img src="./images/arduino.png" alt="arduino" height="200"/>
+   <img src="./images/opencv.png" alt="opencv" height="200"/>
+  <img src="./images/mediapipe.png" alt="mediapipe" height="200"/>
 </p>
 1. **ROS Noetic**: The Robot Operating System (ROS) is used to handle communication between the robot, gesture control, and additional features.
 2. **Arduino IDE**: Used to program the ESP32 for wireless communication and motor control.
