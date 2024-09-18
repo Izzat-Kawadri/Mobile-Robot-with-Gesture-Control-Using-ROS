@@ -21,12 +21,12 @@ We successfully implemented the system to perform four basic movements: **forwar
 7. **Handmade Car Structure**: Inspired by an Arduino car model, this custom-built chassis supports all the components.
 
 ## Software Used
-<p align="center">
+<p align="center" margin="10px">
   <img src="./images/ros.png" alt="ros" height="100"/>
+  <img src="./images/arduino.png" alt="arduino" height="100"/>
   <img src="./images/python.png" alt="python" height="100"/>
-   <img src="./images/arduino.png" alt="arduino" height="100"/>
-   <img src="./images/opencv.png" alt="opencv" height="100"/>
   <img src="./images/mediapipe.png" alt="mediapipe" height="100"/>
+  <img src="./images/opencv.png" alt="opencv" height="100"/>
 </p>
 
 1. **ROS Noetic**: The Robot Operating System (ROS) is used to handle communication between the robot, gesture control, and additional features.
