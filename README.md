@@ -52,8 +52,8 @@ We started by analyzing existing mobile robotic systems, focusing on wireless co
   <img src="./images/mobilerobot.png" alt="robot" height="400"/>
 </p>
 
-1. **Hardware Assembly**: The robot's frame was constructed from a handmade structure inspired by an Arduino car model. The two DC motors were connected to the L298N motor driver, which in turn was controlled by the ESP32. The ESP32 was powered by a 12V lithium battery and received movement commands over Wi-Fi.
-   
+1. **Hardware Assembly**: 
+  - The robot's frame was constructed from a handmade structure inspired by an Arduino car model. The two DC motors were connected to the L298N motor driver, which in turn was controlled by the ESP32. The ESP32 was powered by a 12V lithium battery and received movement commands over Wi-Fi. 
 2. **Software Integration**: 
 <p align="center" >
   <img src="./images/nodes.png" alt="rosnodes" height="300"/>
@@ -63,15 +63,16 @@ We started by analyzing existing mobile robotic systems, focusing on wireless co
    - A Python script using Mediapipe was developed to recognize hand gestures from the laptop camera. Detected gestures were mapped to different movement commands, which were published to the `cmd_vel` topic in ROS.
    - ROS nodes were created for Turtlesim and Teleop_Turtle to enable both simulation and keyboard control.
 
-3. **Communication**:
-<p align="center" >
-  <img src="./images/camera.png" alt="camera" height="200"/>
-</p> 
+3. **Communication**: 
 
 - The laptop processed hand gestures and sent movement commands via Wi-Fi to the ESP32, which controlled the robot's motors. The same commands were sent to Turtlesim for debugging and additional visualization of movement.
 
 
-4. **Movement Control**: The robot successfully responds to four hand gestures:
+4. **Movement Control**:
+ <p align="center" >
+  <img src="./images/camera.png" alt="camera" height="200"/>
+</p>
+  -The robot successfully responds to four hand gestures:
    - **Forward**: The robot moves forward.
    - **Backward**: The robot moves backward.
    - **Left**: The robot turns left.
