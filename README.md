@@ -22,12 +22,13 @@ We successfully implemented the system to perform four basic movements: **forwar
 
 ## Software Used
 <p align="center">
-  <img src="./images/ros.png" alt="ros" height="200"/>
-  <img src="./images/python.png" alt="python" height="200"/>
-   <img src="./images/arduino.png" alt="arduino" height="200"/>
-   <img src="./images/opencv.png" alt="opencv" height="200"/>
-  <img src="./images/mediapipe.png" alt="mediapipe" height="200"/>
+  <img src="./images/ros.png" alt="ros" height="100"/>
+  <img src="./images/python.png" alt="python" height="100"/>
+   <img src="./images/arduino.png" alt="arduino" height="100"/>
+   <img src="./images/opencv.png" alt="opencv" height="100"/>
+  <img src="./images/mediapipe.png" alt="mediapipe" height="100"/>
 </p>
+
 1. **ROS Noetic**: The Robot Operating System (ROS) is used to handle communication between the robot, gesture control, and additional features.
 2. **Arduino IDE**: Used to program the ESP32 for wireless communication and motor control.
 3. **Python with Mediapipe**: Python scripts are used to process hand gestures from the camera, leveraging Mediapipe's hand-tracking capabilities.
