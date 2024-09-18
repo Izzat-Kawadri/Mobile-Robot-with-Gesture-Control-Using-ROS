@@ -9,7 +9,9 @@ We successfully implemented the system to perform four basic movements: **forwar
 <p align="center">
   <img src="./images/battery.png" alt="battery" height="200"/>
   <img src="./images/L298N.png" alt="L298N" height="200"/>
+   <img src="./images/wheals.png" alt="motors" height="200"/>
    <img src="./images/esp32.png" alt="esp32" height="200"/>
+   <img src="./images/cameras.png" alt="camera" height="200"/>
 </p>
 
 1. **2 DC Motors**: To drive the robot's two wheels.
