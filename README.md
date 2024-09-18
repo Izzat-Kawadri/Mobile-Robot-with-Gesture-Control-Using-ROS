@@ -6,6 +6,12 @@ This project involves the design and implementation of a mobile robot with two w
 We successfully implemented the system to perform four basic movements: **forward**, **backward**, **left**, and **right**. These movements are controlled wirelessly using recognized hand gestures.
 
 ## Hardware Used
+<p align="center">
+  <img src="./images/battery.png" alt="battery" height="200"/>
+  <img src="./images/L298N.png" alt="L298N" width="200"/>
+   <img src="./images/esp32.png" alt="esp32" width="200"/>
+</p>
+
 1. **2 DC Motors**: To drive the robot's two wheels.
 2. **12V Lithium Battery**: Power source for the motors and electronics.
 3. **DC Motor Driver (L298N)**: Controller for the DC motors.
