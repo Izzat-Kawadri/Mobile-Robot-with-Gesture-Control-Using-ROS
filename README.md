@@ -61,7 +61,7 @@ We started by analyzing existing mobile robotic systems, focusing on wireless co
   <img src="./images/nodes.png" alt="rosnodes" height="300"/>
 </p>
 
-- The ESP32 was programmed using the Arduino IDE to act as a ROS node, subscribing to the `cmd_vel` topic. It interpreted the velocity commands and controlled the motors accordingly.
+- The ESP32 was programmed using the Arduino IDE to act as a ROS serial node, subscribing to the `cmd_vel` topic. It interpreted the velocity commands and controlled the motors accordingly.
    - A Python script using Mediapipe was developed to recognize hand gestures from the laptop camera. Detected gestures were mapped to different movement commands, which were published to the `cmd_vel` topic in ROS.
    - ROS nodes were created for Turtlesim and Teleop_Turtle to enable both simulation and keyboard control.
 
