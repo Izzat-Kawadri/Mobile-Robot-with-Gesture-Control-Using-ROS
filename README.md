@@ -37,7 +37,7 @@ We successfully implemented the system to perform four basic movements: **forwar
 
 ## Study and Analysis Process
 <p align="center" >
-  <img src="./images/project.png" alt="project" height="200"/>
+  <img src="./images/project.png" alt="project" />
 </p>
 
 We started by analyzing existing mobile robotic systems, focusing on wireless control methods and hand gesture recognition technologies. Mediapipe was chosen for its robust gesture detection. The integration of ROS allowed for efficient communication between different parts of the system, such as the ESP32, the laptop camera, and the robot’s movement control. 
@@ -51,11 +51,12 @@ We started by analyzing existing mobile robotic systems, focusing on wireless co
 <p align="center" >
   <img src="./images/mobilerobot.png" alt="robot" height="200"/>
 </p>
+
 1. **Hardware Assembly**: The robot's frame was constructed from a handmade structure inspired by an Arduino car model. The two DC motors were connected to the L298N motor driver, which in turn was controlled by the ESP32. The ESP32 was powered by a 12V lithium battery and received movement commands over Wi-Fi.
    
 2. **Software Integration**: 
 <p align="center" >
-  <img src="./images/nodes.png" alt="rosnodes" height="200"/>
+  <img src="./images/nodes.png" alt="rosnodes" />
 </p>
 - The ESP32 was programmed using the Arduino IDE to act as a ROS node, subscribing to the `cmd_vel` topic. It interpreted the velocity commands and controlled the motors accordingly.
    - A Python script using Mediapipe was developed to recognize hand gestures from the laptop camera. Detected gestures were mapped to different movement commands, which were published to the `cmd_vel` topic in ROS.
