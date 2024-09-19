@@ -78,6 +78,80 @@ We started by analyzing existing mobile robotic systems, focusing on wireless co
    - **Left**: The robot turns left.
    - **Right**: The robot turns right.
 
+---
+
+## Getting Started :
+
+To get started with this project, follow the steps below to set up the software and run the robot.
+
+### 1. Clone the Repository :
+Clone the project repository to your local machine:
+```
+git clone https://github.com/Izzat-Kawadri/Mobile-Robot-with-Gesture-Control-Using-ROS.git
+```
+
+### 2. ESP32 Setup :
+
+Navigate to the ESP32 folder for the Arduino IDE code. This code is responsible for subscribing to the `cmd_vel` topic in ROS and controlling the robot's motors.
+- Open the `ESP32` folder in Arduino IDE.
+- Install the required libraries (such as the ESP32 library) through the Arduino Library Manager.
+- Flash the code to your ESP32 device using the appropriate COM port.
+- Connect the ESP32 to the motor driver and motors as outlined in the hardware section above.
+
+### 3. ROS Workspace Setup :
+
+A zip file containing the ROS workspace `(catkin_ws.zip)` is provided in the repository. To use it:
+
+ - Extract the `catkin_ws.zip` file.
+ - Navigate to the extracted ROS workspace directory.
+ - Build the workspace:
+   
+```
+cd catkin_ws
+catkin_make
+```
+
+- Source the workspace:
+  
+```
+    source devel/setup.bash
+```
+
+### 4. Gesture Recognition :
+
+The gesture recognition Python script is located in the Gesture Recognition folder. This script uses `Mediapipe` to detect hand gestures and publishes the corresponding commands to the `cmd_vel` topic.
+
+To run the gesture recognition script:
+
+- Ensure you have Python installed, along with the necessary dependencies like `mediapipe` and `opencv-python`.
+- Navigate to the Gesture Recognition folder.
+- Run the Python script:
+  
+```
+    python gesture_control.py
+```
+
+This script will start capturing hand gestures through the laptop camera and publish commands for the robot.
+    
+
+### 5. Running Turtlesim for Debugging :
+
+To simulate and visualize the robot's movement, you can use Turtlesim as an additional feature:
+
+- Start the Turtlesim node in ROS:
+
+```
+rosrun turtlesim turtlesim_node
+```
+
+- Run the teleop keyboard control node to control the robot with your keyboard (optional):
+
+```
+rosrun turtlesim turtle_teleop_key
+```
+
+---
+
 ## Future Improvements
 1. **Improved Gesture Recognition**: Enhance the accuracy and range of gesture recognition using advanced machine learning models or custom-trained models for specific hand gestures.
 2. **Obstacle Detection**: Integrate sensors such as ultrasonic or LiDAR to enable obstacle detection and autonomous navigation.
